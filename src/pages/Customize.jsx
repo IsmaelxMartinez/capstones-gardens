@@ -13,8 +13,7 @@ const Customize = () => {
     setResponse(null);
 
     try {
-      const res = await axios.post("/api/customize", {
-      const res = await axios.post("/api/customize", {
+      const res = await axios.post("https://capstones-gardens-ismaels-projects-06f96837.vercel.app/api/customize", {
         plant,
         zone,
       });
