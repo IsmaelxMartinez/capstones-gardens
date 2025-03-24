@@ -13,8 +13,8 @@ const Customize = () => {
     setResponse(null);
 
     try {
-      const res = await axios.post("http://localhost:3002/api/customize", {
-      const res = await axios.post("http://localhost:3002/api/customize", {
+      const res = await axios.post("/api/customize", {
+      const res = await axios.post("/api/customize", {
         plant,
         zone,
       });

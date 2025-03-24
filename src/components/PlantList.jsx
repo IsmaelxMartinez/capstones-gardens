@@ -11,7 +11,7 @@ const PlantList = ({ query, filters }) => {
 
   useEffect(() => {
     setLoading(true);
-    fetch(`http://localhost:3002/api/listPlants?q=${query}`)
+    fetch(`/api/listPlants?q=${query}`)
       .then((res) => {
         if (!res.ok) {
           throw new Error(`HTTP error! Status: ${res.status}`);
